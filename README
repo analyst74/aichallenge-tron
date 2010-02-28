@@ -1,0 +1,8 @@
+To compile on windows:
+1, get at least C# Express 2008
+2, open bill_ai.csproj
+3, build
+
+Follow instructions here to get the offline engine:
+http://csclub.uwaterloo.ca/contest/strategy.php
+
