@@ -1,0 +1,26 @@
+﻿cd "c:\code\Google AI Challenge"
+java -jar engine/Tron.jar maps/empty-room.txt "bill_ai\bill_ai\bin\Release\bill_ai.exe" "bill_ai\archive\bill_ai_v2.1.exe" 
+java -jar engine/Tron.jar maps/quadrant.txt "bill_ai\bill_ai\bin\Release\bill_ai.exe" "java -jar example_bots/WallHugger.jar" 
+java -jar engine/Tron.jar maps/huge-room.txt "bill_ai\bill_ai\bin\Release\bill_ai.exe" "bill_ai\bill_ai\bin\Release\bill_ai.exe"
+java -jar engine/Tron.jar maps/ring.txt "bill_ai\bill_ai\bin\Release\bill_ai.exe" "bill_ai\bill_ai\bin\Release\bill_ai.exe"
+
+
+
+TODO:
+// pseudo code
+// zones := empty
+// foreach neighbour of me 
+//   exists = false
+//   foreach(zone in zones)
+//     if (zone.contains(neighbour)
+//       exists = true
+//   if (!exists)
+//     osn = open spots of neighbour
+//     zone.add(osn)
+
+//1, in game begin, record all choke points
+//2, before each move, check if any neighbour is choke point
+//	2.1 update choke point list
+//	2.2 based on choke points, split map into zones
+3, when calc heuristic score
+	find all 
